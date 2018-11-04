@@ -1,0 +1,63 @@
+body{
+	font-family: 'Nunito', sans-serif;
+}
+.first-container{
+	height: 100vh;
+	background-image: url("https://www.slsc.org/wp-content/uploads/2018/07/harry_potter_spoken_with_british_accent.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	position: relative;	
+}
+.first-text{
+	color:#fff;
+	font-size: 50px;
+	font-weight: 900;
+	position: absolute;
+	bottom: 60px;
+	text-align: center;
+	width: 100%;
+
+}
+.question-card{
+	padding-top: 50px;
+	margin: 0 auto;
+	display:flex;
+	flex-direction: column;
+	width: 60%;
+	align-items: center;
+	text-align: center;
+	color:#464647;
+}
+.question-card img{
+	width: 750px;
+	height: auto;
+}
+.question-card p{
+	padding-top: 50px;
+}
+.question-card h1{
+	padding-bottom: 20px;
+}
+.last-container{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color:#464647;
+}
+#result{
+	padding-bottom: 40px;
+}
+#final-words img{
+	width: 500px;
+	height: auto;
+}
+#final-words p{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 800;
+}
