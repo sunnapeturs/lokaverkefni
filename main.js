@@ -93,20 +93,26 @@ var qAndA =[
 },
 ]
 for(var i = 0; i < qAndA.length; i++){
-	quiz.innerHTML +=`
+	question = makeQuestion(qAndA[i]);
+	quiz.innerHTML += question;
+	}
+
+function makeQuestion(qObject){
+	question = `
 	<div class="question-card">
-		<p>${qAndA[i].numbers}</p>
-		<h1>${qAndA[i].question}</h1>
-		<img src="${qAndA[i].img}">
+		<p>${qObject.numbers}</p>
+		<h1>${qObject.question}</h1>
+		<img src="${qObject.img}">
 		<div class="input">
-			<input type="radio" name="${qAndA[i].names}" value="a">${qAndA[i].valueA}<br>
-			<input type="radio" name="${qAndA[i].names}" value="b">${qAndA[i].valueB}<br>
-			<input type="radio" name="${qAndA[i].names}" value="c">${qAndA[i].valueC}<br>
-			<input type="radio" name="${qAndA[i].names}" value="d">${qAndA[i].valueD}<br>
+			<input type="radio" name="${qObject.names}" value="a">${qObject.valueA}<br>
+			<input type="radio" name="${qObject.names}" value="b">${qObject.valueB}<br>
+			<input type="radio" name="${qObject.names}" value="c">${qObject.valueC}<br>
+			<input type="radio" name="${qObject.names}" value="d">${qObject.valueD}<br>
 		</div>
 	</div> 
 	`
-	}
+	return question
+}	
 // Onclick function
 var button = document.getElementById('button');
 button.onclick = function(){
